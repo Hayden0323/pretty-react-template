@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "paths": {
+      "@pretty-react-template/components": ["./packages/components/index.tsx"],
+      "@pretty-react-template/hooks": ["./packages/hooks/index.ts"],
+    }
+  },
+  "include": [
+    "./*.ts",
+    "./packages/**/*.ts",
+  ],
+  "exclude": ["**/dist/**", "node_modules"]
+}
