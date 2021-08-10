@@ -1,4 +1,4 @@
-import { FlattenSimpleInterpolation, ThemedCssFunction } from 'styled-components'
+import { FlattenSimpleInterpolation, ThemedCssFunction } from 'styled-components/macro'
 
 export type Color = string
 export interface Colors {
@@ -61,7 +61,7 @@ export interface Grids {
   lg: number
 }
 
-declare module 'styled-components' {
+declare module 'styled-components/macro' {
   export interface DefaultTheme extends Colors {
     grids: Grids
 

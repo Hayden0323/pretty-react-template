@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { css, DefaultTheme, ThemeProvider as StyledComponentsThemeProvider } from 'styled-components'
+import { css, DefaultTheme, ThemeProvider as StyledComponentsThemeProvider } from 'styled-components/macro'
 import { Colors } from './styled'
 
 export const MEDIA_WIDTHS = {
