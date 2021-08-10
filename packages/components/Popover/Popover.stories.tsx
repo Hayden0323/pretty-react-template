@@ -12,8 +12,8 @@ const Template: ComponentStory<typeof Popover> = (args) => <Popover {...args} />
 
 export const TopPopover = Template.bind({})
 TopPopover.args = {
-  content: <p>123</p>,
-  show: 'true',
-  children: <p>456</p>,
-  placement: 'left',
+  content: <p>Content</p>,
+  show: true,
+  children: <p>Children</p>,
+  placement: 'auto',
 }
