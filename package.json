@@ -1,6 +1,10 @@
 {
   "name": "pretty-react-template",
   "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

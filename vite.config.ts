@@ -1,7 +1,12 @@
+import path from 'path'
 import { defineConfig } from 'vite'
-import reactRefresh from '@vitejs/plugin-react-refresh'
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [reactRefresh()]
+module.exports = defineConfig({
+  build: {
+    lib: {
+      entry: path.resolve(__dirname, 'packages/hooks/index.ts'),
+      name: 'hooks',
+      fileName: (format) => `hooks.${format}.js`,
+    },
+  },
 })
